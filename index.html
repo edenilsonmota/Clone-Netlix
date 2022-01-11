@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
-    <link rel="stylesheet" href="assets/css/.style.css">
+    <link rel="stylesheet" href="./assets/css/BarPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
+
 <body>
+    <div class="container">
+        <div class="container-header-nav"> <!-- Logo and Nav-->
+            
+            <div class="flex-item1"> <!--Item 1-->
+                <div class="container-img">
+                    <a href="#"><img src="./assets/img/netflix-logo.png" alt=""></a>
+                </div>
+
+            <nav class="navigation"> <!--Navegação Dropdown-->
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Séries</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Minha Lista</a></li>
+                    
+                </ul>
+            </nav>
+            </div>
+
+            
+            <div class="flex-item2"> <!--Item2-->
+                <div class="search">
+                    <form action="" class="search">
+                        <input class="inputSearch" type="text" placeholder="Search" name="search">
+                        <button type="submit" btnSearch><i class="fa fa-search btnSearch"></i></button>
+                    </form>
+                </div>
+
+                <img src="./assets/img/logo-perfil.png" alt="perfil">
+                <span>Edenilson</span>
+            </div>
+            
+        </div>
+    </div>
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
