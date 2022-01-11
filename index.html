@@ -7,45 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
     <link rel="stylesheet" href="./assets/css/BarPage.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="container-header-nav"> <!-- Logo and Nav-->
-            
-            <div class="flex-item1"> <!--Item 1-->
-                <div class="container-img">
-                    <a href="#"><img src="./assets/img/netflix-logo.png" alt=""></a>
-                </div>
+    <div class="container-header-nav">
+        <!-- Logo and Nav-->
 
-            <nav class="navigation"> <!--Navegação Dropdown-->
+        <div class="flex-item1">
+            <!--Item 1-->
+            <div class="container-logo">
+                <a href="#"></a>
+            </div>
+
+            <nav class="navigation">
+                <!--Navegação Dropdown-->
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Séries</a></li>
                     <li><a href="#">Filmes</a></li>
                     <li><a href="#">Minha Lista</a></li>
-                    
+
                 </ul>
             </nav>
-            </div>
+        </div>
 
-            
-            <div class="flex-item2"> <!--Item2-->
-                <div class="search">
-                    <form action="" class="search">
-                        <input class="inputSearch" type="text" placeholder="Search" name="search">
-                        <button type="submit" btnSearch><i class="fa fa-search btnSearch"></i></button>
-                    </form>
-                </div>
 
-                <img src="./assets/img/logo-perfil.png" alt="perfil">
-                <span>Edenilson</span>
+        <div class="flex-item2">
+            <!--Item2-->
+            <div class="search">
+                <form action="" class="search">
+                    <input class="inputSearch" type="text" placeholder="Search" name="search">
+                    <button type="submit" class="btnSearch"><i class="fa fa-search"></i></button>
+                </form>
             </div>
-            
+            <div class="container-logo-perfil">
+                <a href="#"></a>
+            </div>
+            <span>Edenilson</span>
+
+            <a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
         </div>
     </div>
+
+
+    <!--Filme Principal-->
+    <main>
+       <div id="filme-principal">
+               <div class="titulo-filme-principal">
+                   <img src="./assets/img/spiderMan-titulo.png" alt="spider-man">
+                   <p>Peter Parker é desmascarado e não consegue mais separar sua vida normal dos grandes riscos de ser um super-herói. Quando ele pede ajuda ao Doutor Estranho, os riscos se tornam ainda mais perigosos, e o forçam a descobrir o que realmente significa ser o Homem-Aranha.</p>
+               </div>
+               <div class="Btn-filme-principal">
+                <button class="btnAssistir"><i class="fa fa-play" aria-hidden="true"></i>Assistir</button>
+                <button class="btnInfo"><i class="fa fa-info-circle" aria-hidden="true"></i>Mais informações</button>
+               </div>
+       </div> 
+    </main>
     <script src="./assets/js/main.js"></script>
 </body>
 

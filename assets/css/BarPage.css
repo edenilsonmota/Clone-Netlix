@@ -9,36 +9,28 @@
     src: url(/assets/font/netflix-sans-cufonfonts/NetflixSansThin.ttf);    
 
 }
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'NetflixFont';
-}
 
-body {
-    min-height: 100vh;
-}
-
-.container {
-    display: flex;
-
-}
 
 .container-header-nav { /*barra superior*/
     display: flex;
     justify-content: space-between;
     justify-items: center;
     width: 100%;
-    height: 4rem;
+    height: 3.5rem;
     overflow: hidden;
-    background-color: #141414;
+    background-color: #14141486;
     position: fixed;
     top: 1;
+}
+
+.container-header-nav:hover{
+    background-color: #141414;
 }
 
 .flex-item1 {
     display: flex;
     align-items: center;
+    margin-left: 3rem;
 }
 
 /*navegação*/
@@ -49,25 +41,30 @@ li {
     display: block;
     float: left;
     padding: 0.5rem;
-    text-decoration: none;
+    margin-right: 1rem;
 }
 
-li:hover, a:hover, .flex-item2 span:hover, .btnSearch:hover {
+li:hover, a:hover, .flex-item2 span:hover, .btnSearch:hover, .flex-item2 a:hover {
     cursor: pointer;
-    color: red;
+    color: var(--vermelho);
 }
 li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-.container-img{ /*logo-netflix*/
-    margin: 3.5rem 0 0 2rem;
-    width: 6rem;
-    height: 5rem;
+.container-logo a{ /*logo-netflix*/
+    display: block;
+    background: url(/assets/img/netflix-logo.png);
+    background-size: cover;
+    height: 1.5rem;
+    width: 5.5rem;
 }
 
-.container img{
+.container-header-nav img{
     width: 100%;
     height: auto;
     
@@ -80,8 +77,17 @@ li a {
     
 }
 
+.flex-item2 i {
+    margin-left: 1.5rem;
+}
 
-.flex-item2 img{ /*logo-perfil*/
+.flex-item2 a{
+    color: #fff;
+}
+
+.flex-item2 .container-logo-perfil{ /*logo-perfil*/
+    background: url(/assets/img/logo-perfil.png);
+    background-size: cover;
     width: 100%;
     display: flex;
     width: 1.8rem;
@@ -90,6 +96,7 @@ li a {
 .flex-item2 span{
     color: #fff;
     font-weight:600;
+    text-shadow: black 0.1em 0.1em 0.2em;
     margin-left: 0.5rem;
 }
 
@@ -99,13 +106,26 @@ li a {
 }
 .inputSearch{
     border: none;
-    background-color: #141414;
+    background-color: #1414142a;
     font-size: 1rem;
+    font-weight: bold;
     color: white;
+    width: 3.2rem;
+    margin-right: 1rem;
+}
+::placeholder{
+    color: #fff;
+}
+
+.inputSearch:hover{
+    width: 6rem;
+    transition: 0.3s;
 }
 /*button*/
 .btnSearch{
     width: 1rem;
-    color:#141414;
+    color: white;
+    background-color: #1414142a;
+    border: none;
 }
 
