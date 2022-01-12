@@ -1,0 +1,34 @@
+@media screen and (max-width:700px) {
+    .container-header-nav{
+        height: auto;
+        background-color: var(--preto);
+    }
+    .flex-item1{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .flex-item2 span{
+        display: none;
+    }
+
+    .container-logo a{
+        margin: 1rem 0 1rem 2rem;
+    }
+
+    .titulo-filme-principal p{
+        width: auto;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    #filme-principal{
+        height: 60vh;
+    }
+    
+}

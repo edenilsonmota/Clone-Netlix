@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Netflix</title>
     <link rel="stylesheet" href="./assets/css/BarPage.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--Owl css-->
-    <link rel="stylesheet" href="./lib/OwlCarousel/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="./lib/OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl/owl.theme.default.min.css">
+
 
 </head>
 
@@ -30,9 +32,10 @@
                 <!--Navegação Dropdown-->
                 <ul>
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Séries</a></li>
-                    <li><a href="#">Filmes</a></li>
-                    <li><a href="#">Minha Lista</a></li>
+                    <li><a href="#filmes">Filmes</a></li>
+                    <li><a href="#series">Séries</a></li>
+                    <li><a href="#animes">Animes</a></li>
+                    <li><a href="#desenhos">Desenhos</a></li>
 
                 </ul>
             </nav>
@@ -42,7 +45,7 @@
         <div class="flex-item2">
             <!--Item2-->
             <div class="search">
-                <form action="" class="search">
+                <form action="">
                     <input class="inputSearch" type="text" placeholder="Search" name="search">
                     <button type="submit" class="btnSearch"><i class="fa fa-search"></i></button>
                 </form>
@@ -59,19 +62,105 @@
 
     <!--Filme Principal-->
     <main>
-       <div id="filme-principal">
-               <div class="titulo-filme-principal">
-                   <img src="./assets/img/spiderMan-titulo.png" alt="spider-man">
-                   <p>Peter Parker é desmascarado e não consegue mais separar sua vida normal dos grandes riscos de ser um super-herói. Quando ele pede ajuda ao Doutor Estranho, os riscos se tornam ainda mais perigosos, e o forçam a descobrir o que realmente significa ser o Homem-Aranha.</p>
+        <div id="filme-principal">
+            <div class="titulo-filme-principal">
+                <img src="./assets/img/spiderMan-titulo.png" alt="spider-man">
+                <p>Peter Parker é desmascarado e não consegue mais separar sua vida normal dos grandes riscos de ser um
+                    super-herói. Quando ele pede ajuda ao Doutor Estranho, os riscos se tornam ainda mais perigosos, e o
+                    forçam a descobrir o que realmente significa ser o Homem-Aranha.</p>
 
-                   <div class="Btn-filme-principal">
+                <div class="Btn-filme-principal">
                     <button class="btnAssistir"><i class="fa fa-play" aria-hidden="true"></i>Assistir</button>
-                    <button class="btnInfo"><i class="fa fa-info-circle" aria-hidden="true"></i>Mais informações</button>
-                   </div>
-               </div>
-       </div> 
+                    <button class="btnInfo"><i class="fa fa-info-circle" aria-hidden="true"></i>Mais
+                        informações</button>
+                </div>
+            </div>
+        </div>
     </main>
-    <script src="./assets/js/main.js"></script>
+
+
+
+    <div class="carousel-genero">
+        <div class="genero" id="filmes">
+            <h3>Filmes</h3>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Filmes/1.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Filmes/2.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Filmes/3.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Filmes/4.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Filmes/5.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Filmes/6.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Filmes/7.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Filmes/8.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Filmes/9.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Filmes/10.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Filmes/11.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Filmes/12.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Filmes/13.jpg" alt=""></a></div>
+        </div>
+        <div class="genero" id="series">
+            <h3>Series</h3>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Series/1.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Series/2.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Series/3.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Series/4.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Series/5.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Series/6.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Series/7.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Series/8.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Series/9.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Series/10.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Series/11.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Series/12.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Series/13.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Series/14.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Series/15.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Series/16.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Series/17.jpg" alt=""></a></div>
+        </div>
+        <div class="genero" id="animes">
+            <h3>Animes</h3>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Animes/1.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Animes/2.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Animes/3.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Animes/4.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Animes/5.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Animes/6.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Animes/7.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Animes/8.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Animes/9.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Animes/10.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Animes/11.jpg" alt=""></a></div>
+        </div>
+
+        <div class="genero" id="desenhos">
+            <h3>Desenhos</h3>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Desenhos/1.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Desenhos/2.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Desenhos/3.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Desenhos/4.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Desenhos/5.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Desenhos/6.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Desenhos/7.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Desenhos/8.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Desenhos/9.jpg" alt=""></a></div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Desenhos/10.jpg" alt=""></a>
+            </div>
+            <div class="item"><a href="#"><img class=".box-conteudo" src="./assets/img/Desenhos/11.jpg" alt=""></a>
+            </div>
+        </div>
+
+    </div>
+    <script src="assets/js/owl/jquery.min.js"></script>
+    <script src="assets/js/owl/owl.carousel.min.js"></script>
+    <script src="assets/js/owl/main.js"></script>
 </body>
 
 </html>

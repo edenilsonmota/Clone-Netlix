@@ -76,3 +76,12 @@ main{
     text-shadow: black 0.1em 0.1em 0.2em;
 }
 
+
+.genero{
+    margin: 1rem 0 0 1rem;
+}
+
+.genero h3{
+    padding-bottom: 1rem;
+    font-weight: bolder;
+}
