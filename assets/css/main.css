@@ -30,6 +30,7 @@ main{
 }
 #filme-principal .banner-filme-principal{
     position: absolute;
+    filter: brightness(70%);
     top: 3.3rem;
     left: 0;
     width: 100%;

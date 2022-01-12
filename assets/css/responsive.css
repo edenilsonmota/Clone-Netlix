@@ -26,14 +26,30 @@
         margin: 1rem 0 1rem 2rem;
     }
 
-    .titulo-filme-principal p{
-        width: auto;
-        height: auto;
-        margin-bottom: 2rem;
+    
+    #filme-principal{
+        height: 45vh;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
-    #filme-principal{
-        height: 60vh;
+    .banner-filme-principal{
+        width: 100%;
+        filter: brightness(50%);
+    }
+    #filme-principal logo-banner{
+        height: 7rem;
+        
+    }
+
+    #filme-principal p{
+        display: none;
+    }
+
+    .Btn-filme-principal {
+        margin-top: 4rem;
     }
     
 }
