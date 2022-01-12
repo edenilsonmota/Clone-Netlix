@@ -56,12 +56,9 @@ li a {
     text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-.container-logo a{ /*logo-netflix*/
+.container-logo a img{ /*logo-netflix*/
     display: block;
-    background: url(/assets/img/netflix-logo.png);
-    background-size: cover;
-    height: 1.5rem;
-    width: 5.5rem;
+    width: 7rem;
 }
 
 .container-header-nav img{
