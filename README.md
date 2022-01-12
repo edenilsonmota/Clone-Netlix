@@ -4,11 +4,7 @@
 - JS
 - JQUERY (Owl Carousel)
 
-Fiz esse clone dom netflix, referente a atividade proposta no bootcamp do Inter Frontend Developer da Digital Innovation One
-
-
-
-
+Fiz esse clone do netflix, referente a atividade proposta no bootcamp do Inter Frontend Developer da Digital Innovation One
 
 <br/><br/>
 
